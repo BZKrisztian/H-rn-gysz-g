@@ -1,0 +1,92 @@
+<!--
+File: index.html
+Author: Bátki Zoltán Krisztián
+Copyright: 2024, Bátki Zoltán Krisztián
+Group: Szoft-1-N
+Date: 2024-03-07
+Github: https://github.com/janos12345/
+-->
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Húrnégyszög</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <h1>Húrnégyszög terület-számítás</h1>
+                </header>
+            </div>
+        </div>
+
+        <div class="Hr_negyszogForm">
+            <div class="input">
+                <label for="side_A" class="form-label">A oldal</label>
+                <input type="text" name="" id="side_A" required>
+            </div>
+
+            <div class="input">
+                <label for="side_B" class="form-label">B oldal</label>
+                <input type="text" name="" id="side_B" required>
+            </div>
+
+
+            <div class="input" class="form-label">
+                <label for="side_C">C oldal</label>
+                <input type="text" name="" id="side_C" required>
+            </div>
+
+
+            <div class="input" class="form-label">
+                <label for="side_D">D oldal</label>
+                <input type="text" name="" id="side_D" required>
+            </div>
+
+
+            
+            <div>
+                <button id="calcButton" class="btn btn-primary">Számít</button>
+            </div>
+
+            <div class="output1" aria-colspan="form-label">
+                <label for="half_area" class="form-label">a húrnégyszög félkerülete</label>
+                <input type="text" name="" id="half_area" readonly class="form-control">
+            </div>
+
+
+
+            <div>
+                <button id="calcButton2" class="btn btn-primary">Számít</button>
+            </div>
+
+            <div class="output" class="form-label">
+                <label for="area" class="form-label">a húrnégyszög területe</label>
+                <input type="text" name="" id="area" readonly class="form-control">
+            </div>
+
+        </div>
+
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
