@@ -20,10 +20,6 @@ calcButton.addEventListener('click', ()=>{CalcInit()} )
 
 
 function CalcInit(){
-    // const side_A = Number(baseInputA.value)
-    // const side_B = Number(baseInputB.value)
-    // const side_C = Number(baseInputC.value)
-    // const side_D = Number(baseInputD.value)
     const side_A = Number(InputSide_A.value)
     const side_B = Number(InputSide_B.value)
     const side_C = Number(InputSide_C.value)
@@ -50,6 +46,7 @@ function CalcInit2(){
     const half_area = CalcH_Area(side_A, side_B, side_C, side_D);
     const area = CalcArea(half_area,side_A,side_B,side_C,side_D)
     console.log(area);
+    areaOutput.value = area
 }
 
 function CalcArea(half_area,side_A,side_B,side_C,side_D){
